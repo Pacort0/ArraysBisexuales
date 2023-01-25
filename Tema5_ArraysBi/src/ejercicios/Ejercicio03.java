@@ -7,6 +7,7 @@ public class Ejercicio03 {
 
 	public static void main(String[] args) {
 		int tabla[][] = new int[4][5];
+		int num = 0;
 		int minima;
 		int maxima;
 		double media;
@@ -15,10 +16,14 @@ public class Ejercicio03 {
 		
 		for(int i=0; i<tabla.length; i++) {
 			for(int j=0; j<tabla[i].length; j++) { 
+				do {
 				System.out.print("Introduzca la " + (j+1) + "º nota para el Alumno " + (i+1) + ": ");
-				tabla[i][j] = sc.nextInt();
+				num = sc.nextInt();
+				}while(num<0 || num>10);
+				tabla[i][j] = num;
 			}
 		}
+		
 		System.out.println();
 		System.out.println("Las notas de los alumnos son:");
 		for(int k=0; k<tabla.length; k++) {
