@@ -17,7 +17,7 @@ public class Ejercicio05 {
 		for (int i = 0; i < FILAS; i++) {
 			suma=0; //Reiniciamos la variable de la suma tras cada iteración
 			for (int j = 0; j < COLUMNAS; j++) {
-				tabla[i][j] = (int)((Math.random() * (999 - 100)) + 100); //Damos a cada elemento un valor aleatorio
+				tabla[i][j] = (int)((Math.random() * (1000 - 100)) + 100); //Damos a cada elemento un valor aleatorio
 				suma += tabla[i][j]; //Añadimos el valor a la suma de la fila
 			}
 			sumasHorizontal += suma; //Añadimos el valor de esta fila a la suma de todas las filas
